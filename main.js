@@ -1,4 +1,7 @@
-import Jatekter, {  } from "./JatekTer.js";
+import JatekTer from "./JatekTer.js"
 
-const jatekterElem=document.querySelector(".jatekter")
-new Jatekter(jatekterElem)
+
+let jatekTerElem = document.getElementsByClassName("jatekter")[0];
+let asideElem = document.getElementsByClassName("info")[0];
+
+new JatekTer(jatekTerElem, asideElem)

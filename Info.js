@@ -1,9 +1,13 @@
-export default class Info{
-    constructor (szuloElem){
-        this.szuloElem = szuloElem;
+export default class Info {
+    #kovJatekos;
+    #szuloElem;
+    constructor(kovJatekos, szuloElem) {
+      this.#kovJatekos= kovJatekos;
+      this.#szuloElem = szuloElem;
+      this.kiir()
     }
-    megjelenit(jatekos){
-        this.szuloElem.innerHTML = jatekos +"következik";
+  
+    kiir() {
+      this.#szuloElem.innerHTML+=`<p>${this.#kovJatekos} következik</p>`
     }
-}
-   
+  }
